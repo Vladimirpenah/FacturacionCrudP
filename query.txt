@@ -1,0 +1,29 @@
+Create database DBfacturacion;
+
+use DBfacturacion;
+
+
+CREATE TABLE Articulo(
+IdArticulo int not null AUTO_INCREMENT,
+DescripcionArticulo varchar(59) not null,
+PrecioUnitario decimal(8,2),
+Estado char(3),
+Primary key (IdArticulo)
+
+);
+
+CREATE TABLE Cliente(
+IdCliente int not null AUTO_INCREMENT,
+NombreComercial varchar(59) not null,
+DocIdentificacion varchar(15) not null ,
+Estado char(3),
+Primary key (IdCliente)
+);
+CREATE TABLE Empleado(
+IdEmpleado int not null AUTO_INCREMENT,
+NombreEmpleado varchar(59) not null,
+PorcientoComision decimal(10,0),
+Estado char(3),
+Primary key (IdEmpleado)
+
+);
